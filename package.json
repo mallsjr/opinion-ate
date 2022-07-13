@@ -15,6 +15,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "cypress": "cypress open",
     "lint": "eslint src",
     "eject": "react-scripts eject"
   },
@@ -25,21 +26,21 @@
       "prettier"
     ],
     "plugins": [
-	"prettier",
-	"cypress"
+      "prettier",
+      "cypress"
     ],
     "env": {
-	"cypress/globals": true
+      "cypress/globals": true
     },
     "rules": {
-	"prettier/prettier": "warn"
+      "prettier/prettier": "warn"
     }
   },
-  "prettier":{
-	"arrowParens": "avoid",
-	"bracketSpacing": false,
-	"singleQuote": true,
-	"trailingComma": "all"
+  "prettier": {
+    "arrowParens": "avoid",
+    "bracketSpacing": false,
+    "singleQuote": true,
+    "trailingComma": "all"
   },
   "browserslist": {
     "production": [
@@ -54,6 +55,7 @@
     ]
   },
   "devDependencies": {
+    "cypress": "10.0.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-cypress": "2.12.1",
     "eslint-plugin-prettier": "4.0.0",
